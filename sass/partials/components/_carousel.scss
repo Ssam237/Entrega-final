@@ -1,0 +1,7 @@
+.corousel-custom{
+    @include flex(row,space-evenly,center);
+
+}
+.carousel {
+    justify-items: center;
+}

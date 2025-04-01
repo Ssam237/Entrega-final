@@ -1,0 +1,19 @@
+//Base
+@import 'partials/base/reset';
+@import 'partials/base/tipografia';
+
+//utilities
+@import 'partials/utilities/variables';
+@import 'partials/utilities/maps';
+@import 'partials/utilities/mixin';
+
+//componentes
+@import 'partials/components/logo';
+@import 'partials/components/index';
+@import 'partials/components/navbar-custom';
+@import 'partials/components/body';
+@import 'partials/components/footer';
+@import 'partials/components/carousel';
+@import 'partials/components/img';
+
+
