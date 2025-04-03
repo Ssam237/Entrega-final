@@ -1,1 +1,9 @@
 
+.article-main{
+    @include flex (row,space-between,center);
+    color: map-get($colors , espresso );
+    font-size: map-get($font-sizes ,m );
+
+}
+
+
