@@ -1,0 +1,32 @@
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #d4a373;
+    border-radius: 10px;
+    background-color: #fdf7f3;
+  
+    .form-label {
+      font-weight: bold;
+      color: #8c572c;
+    }
+  
+    .form-control {
+      border: 1px solid #d4a373;
+      border-radius: 5px;
+  
+      &:focus {
+        border-color: #8c572c;
+        box-shadow: 0 0 5px rgba(220, 142, 92, 0.5);
+      }
+    }
+  
+    .btn-primary {
+      background-color: #8c572c;
+      border: none;
+  
+      &:hover {
+        background-color: #d4a373;
+      }
+    }
+  }

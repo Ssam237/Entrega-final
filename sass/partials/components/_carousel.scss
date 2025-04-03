@@ -6,3 +6,55 @@
     justify-items: center;
 }
 
+.main-custom {
+    margin: 0 auto;
+  
+    .carousel {
+      margin-top: 20px;
+      margin-bottom: 40px;
+  
+      .carousel-inner {
+        height: 500px; 
+        display: flex;
+        align-items: center; 
+  
+        .carousel-item img {
+          object-fit: cover;
+        }
+      }
+  
+      // Media queries
+      @media (max-width: 768px) { 
+        .carousel-inner {
+          height: 300px;
+        }
+      }
+  
+      @media (max-width: 576px) { 
+        .carousel-inner {
+          height: 200px; 
+        }
+      }
+    }
+  
+    .container {
+      .row {
+        .col-12 {
+          margin-bottom: 20px; 
+  
+          .article-main {
+            font-size: 1rem;
+            text-align: justify;
+  
+            @media (max-width: 768px) { 
+              font-size: 0.9rem;
+            }
+  
+            @media (max-width: 576px) { 
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }

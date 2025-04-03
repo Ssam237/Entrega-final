@@ -105,6 +105,49 @@ footer div ul li a {
   justify-items: center;
 }
 
+.main-custom {
+  margin: 0 auto;
+}
+.main-custom .carousel {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.main-custom .carousel .carousel-inner {
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+.main-custom .carousel .carousel-inner .carousel-item img {
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .main-custom .carousel .carousel-inner {
+    height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .main-custom .carousel .carousel-inner {
+    height: 200px;
+  }
+}
+.main-custom .container .row .col-12 {
+  margin-bottom: 20px;
+}
+.main-custom .container .row .col-12 .article-main {
+  font-size: 1rem;
+  text-align: justify;
+}
+@media (max-width: 768px) {
+  .main-custom .container .row .col-12 .article-main {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 576px) {
+  .main-custom .container .row .col-12 .article-main {
+    font-size: 0.8rem;
+  }
+}
+
 .custom-container {
   max-width: 800px;
   max-height: 600px;
@@ -176,6 +219,39 @@ footer div ul li a {
   .card-custom .card-img-top {
     border-radius: 5px;
   }
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #d4a373;
+  border-radius: 10px;
+  background-color: #fdf7f3;
+}
+.contact-form .form-label {
+  font-weight: bold;
+  color: #8c572c;
+}
+.contact-form .form-control {
+  border: 1px solid #d4a373;
+  border-radius: 5px;
+}
+.contact-form .form-control:focus {
+  border-color: #8c572c;
+  box-shadow: 0 0 5px rgba(220, 142, 92, 0.5);
+}
+.contact-form .btn-primary {
+  background-color: #8c572c;
+  border: none;
+}
+.contact-form .btn-primary:hover {
+  background-color: #d4a373;
+}
+
+.subtitulo-servicios {
+  text-decoration: solid;
+  color: #482e1d;
 }
 
 /*# sourceMappingURL=style.css.map */

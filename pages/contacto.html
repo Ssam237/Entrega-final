@@ -44,8 +44,32 @@
             </div>
         </nav>
     </header>
-
+    <!--main-->
     <main>
+        <section class="container mt-5 mb-5">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <form class="contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Tu nombre completo" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="tu@email.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="subject" placeholder="Asunto del mensaje" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </section>
 
     </main>
 
