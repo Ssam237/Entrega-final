@@ -1,0 +1,29 @@
+.img-sobrenosotros{
+    border-radius: 15px !important; 
+    border: 1rem solid map-get($colors , espresso );
+    max-width: 100%; 
+    height: auto; 
+    margin: 0 auto;}
+
+    .font-family-p {
+        line-height: 1.6;
+        text-align: justify;
+    
+        // Pantalla grande (lg)
+        @media (min-width: 992px) {
+            font-size: 18px; 
+        }
+    
+        // Pantalla mediana (md)
+        @media (min-width: 768px) and (max-width: 991px) {
+            font-size: 16px; 
+            line-height: 1.5; 
+        }
+    
+        // Pantalla pequeña (sm)
+        @media (max-width: 767px) {
+            font-size: 14px; 
+            line-height: 1.4; 
+            padding: 5px; 
+        }
+    }

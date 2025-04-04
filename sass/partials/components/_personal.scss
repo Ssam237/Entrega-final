@@ -1,5 +1,5 @@
 .card-custom {
-  border: 2px solid #d4a373;
+  border: 0.5rem map-get($colors , leafy );
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -25,7 +25,7 @@
 
     .card-text {
       font-size: 1rem;
-      color: #333;
+      color: map-get($colors , espresso );
     }
   }
 
@@ -44,7 +44,7 @@
 
   @media (max-width: 768px) { 
     box-shadow: none;
-    border: 1px solid #ccc;
+    border: 1px map-get($colors, leafy );
 
     .card-title {
       font-size: 1.1rem;
@@ -69,5 +69,26 @@
     .card-img-top {
       border-radius: 5px;
     }
+  }
+}
+
+.font-family-p {
+  line-height: 1.6;
+  margin-top: 10px;
+
+  // Pantalla grande (lg)
+  @media (min-width: 992px) {
+      font-size: 18px;
+  }
+
+  // Pantalla mediana (md)
+  @media (min-width: 768px) and (max-width: 991px) {
+      font-size: 16px; 
+  }
+
+  // Pantalla pequeña (sm)
+  @media (max-width: 767px) {
+      font-size: 14px; 
+      line-height: 1.4; 
   }
 }

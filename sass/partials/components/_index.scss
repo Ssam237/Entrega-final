@@ -2,8 +2,55 @@
 .article-main{
     @include flex (row,space-between,center);
     color: map-get($colors , espresso );
-    font-size: map-get($font-sizes ,m );
+    font-size: map-get($font-sizes ,xl);
 
+}
+
+.main-custom {
+    // Pantalla grande (lg)
+    @media (min-width: 992px) {
+        .carousel {
+            height: 500px;
+        }
+
+        .font-family-p {
+            font-size: 18px; 
+        }
+
+        .img-logo {
+            width: 200px; 
+        }
+    }
+
+    // Pantalla mediana (md)
+    @media (min-width: 768px) and (max-width: 991px) {
+        .carousel {
+            height: 400px; 
+        }
+
+        .font-family-p {
+            font-size: 16px;
+        }
+
+        .img-logo {
+            width: 150px; 
+        }
+    }
+
+    // Pantalla pequeña (sm)
+    @media (max-width: 767px) {
+        .carousel {
+            height: 300px; 
+        }
+
+        .font-family-p {
+            font-size: 14px; 
+        }
+
+        .img-logo {
+            width: 120px; 
+        }
+    }
 }
 
 

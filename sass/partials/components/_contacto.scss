@@ -1,7 +1,7 @@
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding:  12px 24px;
     border: 2px solid #d4a373;
     border-radius: 10px;
     background-color: #fdf7f3;
@@ -10,7 +10,6 @@
       font-weight: bold;
       color: #8c572c;
     }
-  
     .form-control {
       border: 1px solid #d4a373;
       border-radius: 5px;
@@ -29,4 +28,8 @@
         background-color: #d4a373;
       }
     }
+  }
+
+  #message{
+    min-height: 350px;
   }

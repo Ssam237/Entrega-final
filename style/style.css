@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 * {
   margin: 0;
   padding: 0;
+}
+
+.font-family-p {
+  font-family: "Playfair Display", serif;
 }
 
 .img-logo {
@@ -51,7 +57,41 @@
   justify-content: space-between;
   align-items: center;
   color: #482e1d;
-  font-size: 18px;
+  font-size: 32px;
+}
+
+@media (min-width: 992px) {
+  .main-custom .carousel {
+    height: 500px;
+  }
+  .main-custom .font-family-p {
+    font-size: 18px;
+  }
+  .main-custom .img-logo {
+    width: 200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-custom .carousel {
+    height: 400px;
+  }
+  .main-custom .font-family-p {
+    font-size: 16px;
+  }
+  .main-custom .img-logo {
+    width: 150px;
+  }
+}
+@media (max-width: 767px) {
+  .main-custom .carousel {
+    height: 300px;
+  }
+  .main-custom .font-family-p {
+    font-size: 14px;
+  }
+  .main-custom .img-logo {
+    width: 120px;
+  }
 }
 
 .navbar-custom {
@@ -159,7 +199,7 @@ footer div ul li a {
 }
 
 .card-custom {
-  border: 2px solid #d4a373;
+  border: 0.5rem #a3966a;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -181,7 +221,7 @@ footer div ul li a {
 }
 .card-custom .card-body .card-text {
   font-size: 1rem;
-  color: #333;
+  color: #482e1d;
 }
 @media (max-width: 992px) {
   .card-custom {
@@ -197,7 +237,7 @@ footer div ul li a {
 @media (max-width: 768px) {
   .card-custom {
     box-shadow: none;
-    border: 1px solid #ccc;
+    border: 1px #a3966a;
   }
   .card-custom .card-title {
     font-size: 1.1rem;
@@ -221,10 +261,31 @@ footer div ul li a {
   }
 }
 
+.font-family-p {
+  line-height: 1.6;
+  margin-top: 10px;
+}
+@media (min-width: 992px) {
+  .font-family-p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .font-family-p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .font-family-p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 12px 24px;
   border: 2px solid #d4a373;
   border-radius: 10px;
   background-color: #fdf7f3;
@@ -249,9 +310,86 @@ footer div ul li a {
   background-color: #d4a373;
 }
 
+#message {
+  min-height: 350px;
+}
+
 .subtitulo-servicios {
   text-decoration: solid;
   color: #482e1d;
+}
+
+.img-servicio-mantenimiento {
+  width: 700px;
+  height: auto;
+  border-radius: 15px;
+  border: 3px solid #a3966a;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-servicio {
+  width: 400px;
+  height: auto;
+  border-radius: 15px;
+  border: 3px solid #a3966a;
+  display: block;
+  margin: 0 auto;
+}
+
+.font-family-p {
+  line-height: 1.6;
+  text-align: justify;
+  margin: 10px 0;
+}
+@media (min-width: 992px) {
+  .font-family-p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .font-family-p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 767px) {
+  .font-family-p {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+}
+
+.img-sobrenosotros {
+  border-radius: 15px !important;
+  border: 1rem solid #482e1d;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.font-family-p {
+  line-height: 1.6;
+  text-align: justify;
+}
+@media (min-width: 992px) {
+  .font-family-p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .font-family-p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 767px) {
+  .font-family-p {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

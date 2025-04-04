@@ -2,3 +2,46 @@
     text-decoration: solid;
     color: map-get($colors , espresso );
 }
+
+.img-servicio-mantenimiento{
+    width:700px; 
+    height: auto; 
+    border-radius: 15px; 
+    border: 3px solid map-get($colors ,leafy ); 
+    display: block; 
+    margin: 0 auto; 
+
+}
+
+.img-servicio{
+    width: 400px;
+    height: auto; 
+    border-radius: 15px; 
+    border: 3px solid map-get($colors ,leafy ); 
+    display: block; 
+    margin: 0 auto;
+}
+
+.font-family-p {
+    line-height: 1.6;
+    text-align: justify;
+    margin: 10px 0;
+
+    // Pantalla grande (lg)
+    @media (min-width: 992px) {
+        font-size: 18px;
+    }
+
+    // Pantalla mediana (md)
+    @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 16px; 
+        line-height: 1.5; 
+    }
+
+    // Pantalla pequeña (sm)
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 1.4; 
+        padding: 0 10px; 
+    }
+}
